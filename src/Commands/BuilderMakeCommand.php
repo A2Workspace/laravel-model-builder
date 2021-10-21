@@ -42,7 +42,7 @@ class BuilderMakeCommand extends GeneratorCommand
             $stub = '/stubs/builder.subtask.stub.php';
         }
 
-        return __DIR__ . $stub ?: '/stubs/builder.stub.php';
+        return __DIR__ . ($stub ?: '/stubs/builder.stub.php');
     }
 
     /**
