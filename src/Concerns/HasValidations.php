@@ -2,6 +2,7 @@
 
 namespace A2Workspace\ModelBuilder\Concerns;
 
+use Illuminate\Container\Container;
 use Illuminate\Contracts\Validation\Factory;
 use Illuminate\Validation\ValidationException;
 use A2Workspace\ModelBuilder\Exceptions\ValidationException as BuilderValidationException;
@@ -103,6 +104,6 @@ trait HasValidations
      */
     protected function getValidationFactory()
     {
-        return app(Factory::class);
+        return Container::getInstance()->make(Factory::class);
     }
 }
