@@ -14,7 +14,7 @@ trait HasModelBuilder
      */
     public static function builder(array $attributes = []): ModelBuilder
     {
-        $builder = static::newModelBuilder();
+        $builder = static::newModelBuilder() ?: ModelBuilder::builderForModel(get_called_class());
 
         if ($builder instanceof ModelBuilder) {
             $builder->fill($attributes);

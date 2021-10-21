@@ -23,7 +23,8 @@ abstract class ModelBuilder
 {
     use Concerns\HasAttributes,
         Concerns\HasSubtasks,
-        Concerns\HasValidations;
+        Concerns\HasValidations,
+        Concerns\ResolvesBuilderNames;
 
     /**
      * 呼叫生成器創見後的產物集合。
