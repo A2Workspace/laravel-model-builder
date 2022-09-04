@@ -1,6 +1,6 @@
 {
-  "name": "a2workspace/model-builder",
-  "description": "一個補助建立資料模型的類別",
+  "name": "a2workspace/laravel-model-builder",
+  "description": "提供 Laravel 建立複雜資料的模型生成器",
   "license": "MIT",
   "authors": [
     {
@@ -12,7 +12,7 @@
     "php": "^7.4|^8.0"
   },
   "require-dev": {
-    "orchestra/testbench": "4.x"
+    "orchestra/testbench": "6.x"
   },
   "autoload": {
     "psr-4": {
@@ -30,5 +30,13 @@
         "A2Workspace\\ModelBuilder\\ServiceProvider"
       ]
     }
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit"
+    ],
+    "test-coverage": [
+      "vendor/bin/phpunit --coverage-html coverage"
+    ]
   }
 }

@@ -1,17 +1,36 @@
-# A2Workspace/ModelBuilder
+<h1 align="center">Laravel Model Builder</h1>
+<p align="center">
+<a href="https://github.com/A2Workspace/laravel-model-builder">
+    <img alt="" src="https://github.com/A2Workspace/laravel-model-builder/actions/workflows/coverage.yml/badge.svg">
+</a>
+<a href="https://github.com/A2Workspace/laravel-model-builder">
+    <img alt="" src="https://img.shields.io/github/workflow/status/A2Workspace/laravel-model-builder/tests?style=flat-square">
+</a>
+<a href="https://codecov.io/gh/A2Workspace/laravel-model-builder">
+    <img alt="" src="https://img.shields.io/codecov/c/github/A2Workspace/laravel-model-builder.svg?style=flat-square">
+</a>
+<a href="https://github.com/A2Workspace/laravel-model-builder/blob/master/LICENSE">
+    <img alt="" src="https://img.shields.io/github/license/A2Workspace/laravel-model-builder?style=flat-square">
+</a>
+<a href="https://packagist.org/packages/a2workspace/laravel-model-builder">
+    <img alt="" src="https://img.shields.io/packagist/v/a2workspace/laravel-model-builder.svg?style=flat-square">
+</a>
+<a href="https://packagist.org/packages/a2workspace/laravel-model-builder">
+    <img alt="" src="https://img.shields.io/packagist/dt/a2workspace/laravel-model-builder.svg?style=flat-square">
+</a>
+</p>
 
-VSCode 可開啟 `Ctrl + Shift + V` 閱讀。
+`ModelBuilder` 提供創見複雜資料的模型生成器。
 
-- [簡介](##簡介)
+- [快速開始](##快速開始)
 - [安裝](##安裝)
 - [寫一個模型生成器](##寫一個模型生成器)
   - [定義如何製作模型](##定義如何製作模型)
 - [修改器方法 (Accessors & Mutators)](##修改器方法)
 
-## 簡介
+## 快速開始
 
-`ModelBuilder` 提供創見複雜資料的模型生成器。
-
+一個簡單範例:
 ```php
 namespace App\ModelBuilders;
 
@@ -44,8 +63,7 @@ class ProductBuilder extends ModelBuilder
 ## 安裝
 
 ```bash
-composer config repositories.hooks vcs https://github.com/A2Workspace/laravel-model-builder.git
-composer require "a2workspace/model-builder:*"
+composer require a2workspace/laravel-model-builder
 ```
 
 ## 寫一個模型生成器
